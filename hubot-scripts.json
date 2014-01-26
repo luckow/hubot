@@ -1,1 +1,1 @@
-["redis-brain.coffee", "shipit.coffee"]
+["redis-brain.coffee", "shipit.coffee", "jira-issues.coffee", "likeaboss.coffee", "hashing.coffee", "karma.coffee", "remind.coffee", "github-pulls.coffee", "drupalorg.coffee", "tell.coffee", "decide.coffee"]
