@@ -33,14 +33,14 @@ module.exports = (robot) ->
             title = json.title
             description = json.description
 
-            console.log body
+            #console.log body
 
             if(linktype != "photo" && linktype != "rich")
               message = '"' + title + '"' if title?
               message += ' ' + thumbnail if thumbnail?
               message += ' ' + description if description?
-              message += " [" + json.url + "]" if json.url?
-              msg.send message
+              message += " [" + json.url + "]" if json.url? && message?
+              msg.send message if message?
 
           catch error
             try
