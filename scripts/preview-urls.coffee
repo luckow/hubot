@@ -22,8 +22,8 @@ module.exports = (robot) ->
       robot.http(embedlyUrl + url)
         .get() (err, res, body) ->
           if res.statusCode >= 300
-            msg.send "Cannot retrieve url [code: " + res.statusCode + "]"
-            console.log body
+            #console.log "Cannot retrieve url [code: " + res.statusCode + "]"
+            #console.log body
             return
 
           try
